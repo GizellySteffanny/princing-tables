@@ -1,0 +1,81 @@
+/*  Variables  */
+:root {
+    --white: #fff;
+    --lighten: #f4f4f4;
+    --grey-1: #555;
+    --lighten-grey: #eee;
+    --dark-grey: #333;
+    --back-1: #111;
+    --black: #000;
+    --green-2: #4caf50;
+   
+}
+
+/*  Reset  */
+body {
+    font-family: "Tahoma", sans-serif;
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+h2 { text-align: center; }
+
+.col {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.price-box{
+    background-color: var(--white);
+    color: var(--grey-1);
+    list-style-type: none;
+    border: 1px solid var(--grey-1);
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price-box:hover, .price-box.best {
+    box-shadow: 0 10px 15px 0 var(--black);
+}
+
+.price-box .header {
+    background-color: var(--back-1);
+    color: var(--white);
+    font-size: 25px;
+}
+
+.price-box .header.header-green{
+    background-color: var(--green-2);
+}
+
+.price-box li {
+    padding: 20px;
+    border-bottom: 1px solid var(--lighten-grey);
+    text-align: center;
+}
+
+.price-box .emph {
+    background-color: var(--lighten);
+    font-size: 20px;
+}
+
+.button {
+    background-color: var(--green-2);
+    border: none;
+    color: var(--white);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+    .col {
+        width: 100%;
+    }
+}
